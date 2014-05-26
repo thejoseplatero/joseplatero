@@ -1,9 +1,26 @@
-<p>This is the header</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			<?php 
 
-<?php 
-    $args = array(
-        'menu' => 'main-menue'
-      );
+				wp_title('-', true, 'right');
+				bloginfo( 'name' );
 
-    wp_nav_menu( $args);
-?>
+			 ?>
+
+		</title>
+		<?php wp_head(); ?>
+	</head>
+	<body>
+
+		<p>This is the header</p>
+
+		<?php 
+		    $args = array(
+		        'menu' => 'main-menue'
+		      );
+
+		    wp_nav_menu( $args);
+		?>
