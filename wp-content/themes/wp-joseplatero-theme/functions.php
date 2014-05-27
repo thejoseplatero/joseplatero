@@ -9,7 +9,14 @@
  	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css' );
  	wp_enqueue_style( 'social', get_template_directory_uri() . '/css/webfonts/ss-social.css' );
 
+ 	wp_register_style('flexslider', get_template_directory_uri() . '/css/flexslider.css' );
+ 		if ( is_page( 'home' ) ) {
+ 			wp_enqueue_style( 'flexslider' );
+ 		}
+
 }
+
+
 
  add_action('wp_enqueue_scripts', 'theme_styles');
 
