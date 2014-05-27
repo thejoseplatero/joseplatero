@@ -1,4 +1,4 @@
-<?php 
+	<?php 
 
  // Styles
  function theme_styles() {
