@@ -329,7 +329,10 @@ nav a {
         color: #ddd;
         text-align: left;
     }
-
+    
+    .spotlight.project:nth-child(even){
+        margin-right:0;
+    }
 
 /* Testimonial ----------- */
 
