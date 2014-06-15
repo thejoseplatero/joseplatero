@@ -12,4 +12,6 @@
   <p>There are no posts or pages</p>
 <?php endif; ?>
 
+  <?php get_template_part('content', 'testimonials') ?>
+
 <?php get_footer(); ?>
