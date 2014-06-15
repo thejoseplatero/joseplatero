@@ -1,8 +1,8 @@
 <?php 
 
- /*
-	Template Name: Work Page
- */
+/*
+Template Name: Work Page
+*/
 
 get_header(); ?>
 
@@ -12,17 +12,17 @@ get_header(); ?>
 
   <?php 
 
-  	$args = array(
-  		'post_type' => 'work'
-  		);
+  $args = array(
+    'post_type' => 'work'
+    );
 
-  	$the_query = new WP_Query( $args );
-   ?>
+  $the_query = new WP_Query( $args );
+  ?>
 
   <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <?php get_template_part('content', 'work'); ?>
 
-  
+
   <?php endwhile; endif; ?>
 
 </div>

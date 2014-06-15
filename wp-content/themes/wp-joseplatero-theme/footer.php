@@ -1,18 +1,36 @@
 <footer>
 <div class="grid_12 omega clearfix">
-  <div id="twitter" class="grid_4">
-    <h5>Twitter</h5>
-    <p>We're accepting submissions for the next episode of Treeviews! Submit your website/app for feedback! <a href="#">trhou.se/treeviews</a></p>
+  <div class="grid_4 footer-left">
+
+ 
+    <?php if ( dynamic_sidebar( 'footer_left' ) ): ?>
+
+      <?php else: ?>
+      
+        <h5>Twitter</h5>
+        <p>Install Twiget Plugin and place widget here</p>
+ 
+    <?php endif; ?>
+  </div>
+  <div class="grid_4 footer-middle">
+    <?php if (dynamic_sidebar( 'footer_middle' )): ?>
     
-    <a href="#" class="post-link">Follow me on Twitter &rarr;</a>
+      <?php else: ?>
+      
+        <h5>Dribble</h5>
+        <p>Install Twiget Plugin and place widget here</p>
+    
+    <?php endif; ?>
   </div>
-  <div id="dribbble" class="grid_4">
-    <h5>Dribbble</h5>
-    <p>Dribbble Shots</p>
-  </div>
-  <div id="treehouse" class="grid_4 omega">
-    <h5>Treehouse</h5>
-    <p>Treehouse Badges</p>
+  <div class="grid_4 omega footer-right">
+    <?php if (dynamic_sidebar( 'footer_right' )): ?>
+    
+      <?php else: ?>
+      
+        <h5>Treehouse</h5>
+        <p>Install Twiget Plugin and place widget here</p>
+    
+    <?php endif; ?>
   </div>
 </div>
       <div id="copyright">

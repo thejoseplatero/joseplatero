@@ -166,7 +166,7 @@ h2 {
  	margin: 1% 0;
  	color: #000;
  }
- 
+
  .recent-post h3,
  h3#comments,
  #respond h3,
@@ -389,14 +389,26 @@ article {
 /* ==========================================================================
    Social
    ========================================================================== */
-
-#twitter p {
- 	  font-family: "GoudyItalic";
- 	  font-size: 1.25em;
- 	  line-height: 1.5em;
- 	  margin: 2% 0;
+.footer-left ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-size: 1rem;
 }
 
+li.wptreehouse-badge{
+    width:60px;
+}
+
+ul.wptreehouse-badges{
+    padding:0;
+}
+
+.wptreehouse-badges,
+.wptreehouse-badge-info{
+    bottom: 90px !important;
+    left: -42px !important;
+}
 
 /* ==========================================================================
    Footer

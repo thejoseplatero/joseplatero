@@ -39,4 +39,23 @@ function theme_js(){
   // Enable custom menus
   add_theme_support( 'menus');
 
+ // Enable custom Widgets
+ function create_widget ( $name, $id, $description ) {
+    $args = array(
+      'name'          => __( $name),
+      'id'            => $id,
+      'description'   => $description,
+      'before_widget' => '',
+      'after_widget'  => '',
+      'before_title'  => '<h5',
+      'after_title'   => '</h5>' 
+    ); 
+    register_sidebar( $args );
+  }  
+
+  create_widget('Left Footer', 'footer_left', 'displays in the bottom left' );
+  create_widget('Middle Footer', 'footer_middle', ' displays in the bottom middle' );
+  create_widget('Right Footer', 'footer_right', 'displays in the bottom right');  
+
+
 ?>
